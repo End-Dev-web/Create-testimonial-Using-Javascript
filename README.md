@@ -1,0 +1,2 @@
+# Create-testimonial-Using-Javascript
+Most websites use testimonials on their home page for better user attraction. When we buy any services or products first we check reviews, that’s why we should use that on our website. if you have to created your websites from scratch this tutorial  will helpful for you.  in this tutorial you’ll learn How To CreateTestimonial Slider Using HTML CSS JavaScript . We’ll use HTML CSS &amp; JS to create this awesome Testimonial Slider.
