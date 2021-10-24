@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 620px;
+  background: #fff;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 10px
+          rgba(0, 0, 0, 0.5));
+  overflow: hidden;        
+}
+
+.testimonial-details {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  padding: 30px;
+}
+
+.testimonial-card .testimonial-logo {
+  position: absolute;
+  font-size: 20rem;
+  color: #000;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.testimonial-details p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.info {
+  display: flex;
+}
+
+.testimonial-details .title {
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.testimonial-details h4 {
+  color: #5f9ea0;
+}
+
+.testimonial-card .buttons {
+  position: relative;
+  display: flex;
+  width: 80px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  background: #5f9ea0;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.testimonial-card .buttons .prev-btn,
+.testimonial-card .buttons .next-btn {
+  cursor: pointer;
+  transition: .3s;
+}
+
+.testimonial-card .buttons .prev-btn:hover,
+.testimonial-card .buttons .next-btn:hover {
+  transform: scale(1.25);
+}
+
+img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.testimonial-img {
+  position: absolute;
+  width: 40%;
+  margin-left: 80px;
+  background-image: url('img/shape.svg');
+  padding: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+  }
+
+  .testimonial-card {
+    height: 450px;
+    display: flex;
+    align-items: center;
+  }
+
+  .testimonial-img {
+    position: relative;
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  img {
+    width: 300px;
+    margin-top: 50px;
+  }
+
+  .testimonial-card .buttons {
+    position: absolute;
+    left: 17px;
+    bottom: 50px;
+  }
+
+  .testimonial-details {
+    padding-top: 90px;
+    padding-left: 50px;
+  }
+
+  .testimonial-card .testimonial-logo {
+    position: absolute;
+    left: 100px;
+    bottom: 0px;
+  }
+}
